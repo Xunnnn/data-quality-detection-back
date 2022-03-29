@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.100.113.6:3306/DataQuality
+    username: dataquality
+    password: asdf1234!
+    hikari:
+      pool-name: DateHikariCP
+      minimum-idle: 5
+      idle-timeout: 180000
+      maximum-pool-size: 10
+      auto-commit: true
+      max-lifetime: 180000
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

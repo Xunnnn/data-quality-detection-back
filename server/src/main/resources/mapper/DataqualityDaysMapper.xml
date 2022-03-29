@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sinotruk.server.mapper.DataqualityDaysMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sinotruk.server.pojo.DataqualityDays">
+        <result column="op_date" property="opDate" />
+        <result column="onlinecnt" property="onlinecnt" />
+        <result column="lsd_onlinecnt" property="lsdOnlinecnt" />
+        <result column="abnorcnt" property="abnorcnt" />
+        <result column="lsd_abnorcnt" property="lsdAbnorcnt" />
+        <result column="unintcnt" property="unintcnt" />
+        <result column="lsd_unintcnt" property="lsdUnintcnt" />
+        <result column="invalcnt" property="invalcnt" />
+        <result column="lsd_invalcnt" property="lsdInvalcnt" />
+        <result column="delaycnt" property="delaycnt" />
+        <result column="lsd_delaycnt" property="lsdDelaycnt" />
+        <result column="delayavg" property="delayavg" />
+        <result column="unacccnt" property="unacccnt" />
+        <result column="lsd_unacccnt" property="lsdUnacccnt" />
+        <result column="qa_score" property="qaScore" />
+        <result column="datacnt" property="datacnt" />
+        <result column="lsd_datacnt" property="lsdDatacnt" />
+        <result column="abnordatacnt" property="abnordatacnt" />
+        <result column="lsd_abnordatacnt" property="lsdAbnordatacnt" />
+        <result column="loss_truckcnt" property="lossTruckcnt" />
+        <result column="loss_truckrate" property="lossTruckrate" />
+        <result column="loss_avgrate" property="lossAvgrate" />
+        <result column="loss_datarate" property="lossDatarate" />
+        <result column="lsd_losavgrate" property="lsdLosavgrate" />
+        <result column="lsd_lostrurate" property="lsdLostrurate" />
+        <result column="lsd_losdatrate" property="lsdLosdatrate" />
+        <result column="lsd_delavg" property="lsdDelavg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        op_date, onlinecnt, lsd_onlinecnt, abnorcnt, lsd_abnorcnt, unintcnt, lsd_unintcnt, invalcnt, lsd_invalcnt, delaycnt, lsd_delaycnt, delayavg, unacccnt, lsd_unacccnt, qa_score, datacnt, lsd_datacnt, abnordatacnt, lsd_abnordatacnt, loss_truckcnt, loss_truckrate, loss_avgrate, loss_datarate, lsd_losavgrate, lsd_lostrurate, lsd_losdatrate, lsd_delavg
+    </sql>
+
+</mapper>

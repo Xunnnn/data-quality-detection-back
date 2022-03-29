@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sinotruk.server.mapper.DataqualityTruckDaysMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sinotruk.server.pojo.DataqualityTruckDays">
+        <id column="op_date" property="opDate" />
+        <result column="vin" property="vin" />
+        <result column="datainfo" property="datainfo" />
+        <result column="normal_cnt" property="normalCnt" />
+        <result column="should_cnt" property="shouldCnt" />
+        <result column="update_time" property="updateTime" />
+        <result column="delaytime" property="delaytime" />
+        <result column="loss_rate" property="lossRate" />
+        <result column="abnormal_status" property="abnormalStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        op_date, vin, datainfo, normal_cnt, should_cnt, update_time, delaytime, loss_rate, abnormal_status
+    </sql>
+
+</mapper>
